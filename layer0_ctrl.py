@@ -12,4 +12,14 @@ for i in range(stages):
 
     w.append(aux)
 
-print(w)
+
+print("(",end='')
+for i in w:
+    print('(',end='')
+    for j in range(len(i)):
+        if j ==len(i)-1:
+            print(i[j],end='')
+        else:
+            print(i[j],end=',')
+    print(')',end='')
+print(')')
