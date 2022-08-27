@@ -12,7 +12,7 @@ for i in range(stages):
 
     w.append(aux)
 
-
+print("constant layer0_vals:ctr0_array :=",end='')
 print("(",end='')
 for i in w:
     print('(',end='')
@@ -22,4 +22,4 @@ for i in w:
         else:
             print(i[j],end=',')
     print(')',end='')
-print(')')
+print(');')
