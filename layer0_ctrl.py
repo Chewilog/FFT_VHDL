@@ -12,7 +12,7 @@ for i in range(stages):
 
     w.append(aux)
 
-print("constant layer0_vals:ctr0_array :=",end='')
+print("constant layer0_vals:ctr0_array_int_full :=",end='')
 print("(",end='')
 for i in w:
     print('(',end='')
