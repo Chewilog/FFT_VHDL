@@ -41,7 +41,7 @@ for i in range(num_in):
 filefx = open('filefx.txt','w')
 Xs = np.fft.fft(xs[0])
 for i in Xs:
-    filefx.write(str(i))
+    filefx.write(str(i)+"\n")
 
 
 
