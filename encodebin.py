@@ -38,8 +38,10 @@ for i in range(num_in):
             continue
         files_dict[i].write(float2bin(8, 18, xs[i][j])+'\n')
 
+print(xs)
+
 filefx = open('filefx.txt','w')
-Xs = np.fft.fft(xs[0])
+Xs = np.fft.fft(xs[0][::-1])
 for i in Xs:
     filefx.write(str(i)+"\n")
 

@@ -23,7 +23,8 @@ imag_rom.write("memory_initialization_radix=2;\nmemory_initialization_vector=\n"
 real_rom.write("memory_initialization_radix=2;\nmemory_initialization_vector=\n")
 
 for j in range(N_ram):
-    valores[j] = np.e**(2*np.pi*i*j/N_ram)
+    valores[j] = np.e**(-2*np.pi*i*j/N_ram)
+    print(valores[j])
     if j == N_ram-1:
         real_rom.write( float2bin(8,18,np.real(valores[j]))+';')
         imag_rom.write( float2bin(8,18,np.imag(valores[j]))+';')
